@@ -1,0 +1,128 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "data",
+						"type": "string"
+					}
+				],
+				"name": "Sign_Message",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "data",
+						"type": "string"
+					}
+				],
+				"name": "hash",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "data",
+						"type": "string"
+					}
+				],
+				"name": "verify",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"Sign_Message(string)": {
+					"params": {
+						"data": "the original message"
+					},
+					"returns": {
+						"_0": "a signed message of the *digest*"
+					}
+				},
+				"hash(string)": {
+					"params": {
+						"data": "The message to be hashed"
+					},
+					"returns": {
+						"_0": "The hash value, or message digest, of the input"
+					}
+				},
+				"verify(string)": {
+					"params": {
+						"data": "the original message"
+					},
+					"returns": {
+						"_0": "true if the public key decrypts the signed message into the digest."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"RSA.sol": "RSA"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"RSA.sol": {
+			"keccak256": "0x2ec1b6136694d9978b35dc3d54232ef208f661ef63028436a2dc49223164f50c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://837a562d4077ac5e1ac714f8aa4ce8840656517406f7de467ee3465dc1e668a2",
+				"dweb:/ipfs/QmUAgmtV9jZaepSxDKmNqVf6pskJH6ogPjN41N54nDHQXt"
+			]
+		}
+	},
+	"version": 1
+}
