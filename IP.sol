@@ -47,9 +47,7 @@ contract Masking{
         bytes memory bytes_IP = bytes(input);
         // Convert string IP to binary number
         for (uint i = 0; i < bytes_IP.length; i++) {
-        // If the character is '1', set the corresponding bit in the uint
         if (bytes_IP[i] == "1") {
-            // We shift '1' left based on its position from the right
             binary_IP |= (uint256(1) << (bytes_IP.length - 1 - i));
         }
     }
